@@ -20,7 +20,7 @@ export default {
 
 <style  scoped>
 .container {
-    margin-top: 20rem;
+    margin-top: 2rem;
 }
     .header {
         font-weight: 700;

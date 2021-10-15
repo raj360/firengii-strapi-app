@@ -16,6 +16,9 @@
 </script>
 
 <style scoped>
+  .container{
+   margin-bottom: 20rem;
+  }
        .Hero {
         height: 50vh;
         position: relative;
