@@ -6,5 +6,10 @@
 </template>
 
 <script>
-export default {};
+import { largeCardSections, smallCardSections } from "@/assets/data.js"
+export default {
+  data(){
+  return{ largeCardInfo:largeCardSections}
+  }
+};
 </script>
