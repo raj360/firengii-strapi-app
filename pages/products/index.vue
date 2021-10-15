@@ -1,5 +1,7 @@
 <template>
-  <div class="container">
+   <div>
+   <Nav/>
+   <div class="container">
    <LargeCardDisplay
     v-for="cardInfo in largeCardInfo.slice(0,1)"
     :key="cardInfo.id"
@@ -13,6 +15,7 @@
    />
 
   </div>
+   </div>
 </template>
 
 <script>
