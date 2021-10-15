@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <Hero/>
+    <LargeCardDisplay/>
   </div>
 </template>
 
