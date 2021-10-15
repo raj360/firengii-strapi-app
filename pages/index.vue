@@ -1,15 +1,21 @@
 <template>
   <div class="container">
-    <Hero/>
-    <LargeCardDisplay/>
+    <Hero />
+    <LargeCardDisplay
+      v-for="cardInfo in largeCardInfo"
+      :key="cardInfo.id"
+      :cardsSection="cardInfo"
+    />
   </div>
 </template>
 
 <script>
-import { largeCardSections, smallCardSections } from "@/assets/data.js"
+import { largeCardSections, smallCardSections } from "@/assets/data.js";
 export default {
-  data(){
-  return{ largeCardInfo:largeCardSections}
-  }
+
+  data() {
+    console.log({largeCardSections})
+    return { largeCardInfo: largeCardSections }
+  },
 };
 </script>

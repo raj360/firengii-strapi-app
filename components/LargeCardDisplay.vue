@@ -1,10 +1,9 @@
 <template>
   <div class="container">
-    <h4>Top-rated Fire Extinguisher in Nigara</h4>
+    <h4>{{cardsSection.title}}</h4>
 
     <div class="snippet">
-      User say thee are the best fire extinguishers to rent if your house is
-      burning down.
+      {{cardsSection.snippet}}
     </div>
 
     <div class="cards-container">
@@ -14,7 +13,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props:['cardsSection']
+};
 </script>
 
 <style  scoped>
