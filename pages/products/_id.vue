@@ -1,15 +1,20 @@
 <template>
   <div>
-    I'm products/id
+    Products
+    {{products}}
   </div>
 </template>
 
 <script>
-  export default {
+  import {mapState} from "vuex"
 
+  export default {
+    computed: {
+    ...mapState(['products'])
+    }
   }
 </script>
 
-<style lang="scss" scoped>
+<style  scoped>
 
 </style>
