@@ -1,7 +1,6 @@
 <template>
   <div>
-    Products
-    {{products}}
+    {{$route.params.id}}
   </div>
 </template>
 
