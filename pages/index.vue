@@ -6,16 +6,19 @@
       :key="cardInfo.id"
       :cardsSection="cardInfo"
     />
+    <SmallCardDisplay
+    v-for="cardInfo in smallCardSections"
+    :key="cardInfo.id"
+    :cardsSection="cardInfo"
+    />
   </div>
 </template>
 
 <script>
 import { largeCardSections, smallCardSections } from "@/assets/data.js";
 export default {
-
   data() {
-    console.log({largeCardSections})
-    return { largeCardInfo: largeCardSections }
+    return { largeCardInfo: largeCardSections, smallCardSections };
   },
 };
 </script>
