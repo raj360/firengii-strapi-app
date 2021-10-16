@@ -172,9 +172,7 @@ export const state = () => ({
 })
 
 export const getters = {
-     getProductsById:(state) => (id ) =>{
-
-     }
+     getProductById:(state) => (id ) => state.products.find(product => product.id == id),
 }
 
 
